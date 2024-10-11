@@ -9,8 +9,8 @@ const process = [
     new Process('555', 5, 550, 10, '10:00')
 ]
 
-const execOrder = RoundRobin(process, 25, 5)
+const execOrder = RoundRobin(process, 5, 1)
 
 execOrder.forEach((process) => {
-    console.log(process)
+    console.log({'process': process.pid, 'start': `${process.start}ms`, 'end': `${process.end}ms`})
 })

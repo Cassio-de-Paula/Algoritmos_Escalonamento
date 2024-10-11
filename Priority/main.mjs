@@ -9,7 +9,7 @@ const process = [
     new Process('555', 5, 550, 10, '10:00')
 ]
 
-const execOrder = Priority(process, 25, 5)
+const execOrder = Priority(process, 5, 1)
 
 execOrder.forEach((process) => {
     console.log(process)
